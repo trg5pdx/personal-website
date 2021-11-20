@@ -1,0 +1,23 @@
+:root {
+  --dark-gray: #241f1f;
+  --gray: #363636;
+  --white: #ffffff;
+  --purple: #740ac4;
+}
+
+.container {
+  background-color: var(--dark-gray);
+}
+
+.nav-colors {
+  background-color: black;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.content-container {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 2em;
+  font-size: 1.2em;
+}
