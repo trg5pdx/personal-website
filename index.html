@@ -9,72 +9,105 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body class="container">
     <nav class="navbar fixed-top navbar-expand-md nav-colors">
       <ul class="nav mx-auto">
         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#Work" class="nav-link">Previous Work</a></li>
-        <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <a href="#Work" class="nav-link">Previous Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Contact" class="nav-link">Contact</a>
+        </li>
       </ul>
     </nav>
     <main class="w-75 mt-5 mx-auto content-container">
       <h1>Welcome to Thomas Gardner's Personal Website!</h1>
       <!-- ABOUT SECTION -->
-      <h3 id="About">About</h3>
-      <p class="paragraph">
-        Hi, my name is Thomas and I'm an undergrad student. At this point, I think I have a little over 
-        a year before graduation. I had a programming class in high school that taught the basics of web development, 
-        which had us work on HTML/CSS and in the last part of the class JavaScript. I also took front end web dev for 
-        a few weeks back in the spring term before taking a break from school for mental health reasons. So I have some 
-        familiarity with web development but not really enough to actually make a decent website, so it will be cool to 
-        learn more about it.
-
-        As for a fun fact about myself, aside from working on computers, I also enjoy studying history. I took a few 
-        AP history classes back in high school and I've taken a few history classes at PSU. This term I'm taking a 
-        history class on renaissance europe and the protestant reformation. I've been interested in history since 
-        high school, and if I wasn't a CS student, I think I would've been a historian instead.
-
-
-      </p>
+      <h2 id="About" class="section-header">About</h2>
+      <div class="section">
+        <p>
+          Hi, my name is Thomas and I'm and undergrad Computer Science student
+          at Portland State University. Along with having an interest in CS
+          topics like programming and algorithms, I'm also interested in working
+          on old computers and electronics, playing video games, and I have an
+          interest in History.
+        </p>
+        <p>
+          So far, I've taken 5 history classes while at PSU, covering topics
+          like Medieval European History, the history of the American Indians in
+          the Southeastern United States, and about the Renaissance and the
+          Protestant Reformation. It's one of my favorite things to study, and I
+          enjoy learning all kinds of things in history, like learning about
+          pre-colonization societies, and learning about how people lived at
+          different points in history.
+        </p>
+      </div>
 
       <!-- WORK SECTION -->
-      <h3 id="Work">Previous Work</h3>
-      <p>
-        GPA: 3.35
-        <br />
-        Work History:
-        2017-2019: Tutor at Upward Bound ETS
-        2019-: Office Assistant at Upward Bound ETS
-        <br />
-        Volunteered previously at Free Geek and Oregon Food Bank.
-      </p>
-
+      <h2 id="Work" class="section-header">Previous Work</h2>
+      <div class="bootstrap-grid section">
+        <div class="row1 row">
+          <div class="col-md-6">
+            <h4>School</h4>
+            <ul>
+              <li>GPA: 3.35</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Work History</h4>
+            <ul>
+              <li>2017-2019: Tutor @ Upward Bound ETS</li>
+              <li>2019-: Office Assistant @ Upward Bound ETS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row2 row">
+          <div class="col-md-6">
+            <h4>Volunteering History</h4>
+            <ul>
+              <li>Free Geek</li>
+              <li>Oregon Food Bank</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- PROJECTS SECTION -->
-      <h3 id="Projects">Projects</h3>
-      <p>
-        <h4>Xv6</h4>
+      <h2 id="Projects" class="section-header">Projects</h2>
+      <div class="section">
+        <h4 class="section-header">Xv6</h4>
         <p>
-            Link to Repo: <a href="https://github.com/trg5pdx/xv6">Xv6</a>
-            <br />
-            One project I worked on was for the operating system called Xv6. It’s a OS thats mainly focused on teaching students 
-            about the in’s and out’s of of OS development, and how they function internally without giving them an OS thats too 
-            complex. For Xv6, I worked on creating new programs for the OS that could be run from it’s command line, worked on 
-            how processes were handled, implemented a round-robin scheduler, and implemented a multilevel feedback queue algorithm 
-            (MLFQ) into the scheduler. For the round-robin scheduler and MLFQ, the primary purpose of implementing those was to teach 
-            about how OSes avoid programs being unable to run due to other processes using up all of the resources, which was done by 
-            implementing states that the processes would run through to ensure that they would pause at some point and let others run, 
-            hence the name round robin. And the MLFQ algorithm adds to that by making it utilize multiple cores, and be able to prioritize 
-            what runs even better than a basic round-robin scheduler would. One of the ways it does this is by adding priority levels and 
-            a process promotion and demotion system to help determine what processes get to run and when.
+          Link to Repo: <a href="https://github.com/trg5pdx/xv6">Xv6</a>
+          <br />
+          One project I worked on was for the operating system called Xv6. It’s
+          a OS thats mainly focused on teaching students about the in’s and
+          out’s of of OS development, and how they function internally without
+          giving them an OS thats too complex. For Xv6, I worked on creating new
+          programs for the OS that could be run from it’s command line, worked
+          on how processes were handled, implemented a round-robin scheduler,
+          and implemented a multilevel feedback queue algorithm (MLFQ) into the
+          scheduler. For the round-robin scheduler and MLFQ, the primary purpose
+          of implementing those was to teach about how OSes avoid programs being
+          unable to run due to other processes using up all of the resources,
+          which was done by implementing states that the processes would run
+          through to ensure that they would pause at some point and let others
+          run, hence the name round robin. And the MLFQ algorithm adds to that
+          by making it utilize multiple cores, and be able to prioritize what
+          runs even better than a basic round-robin scheduler would. One of the
+          ways it does this is by adding priority levels and a process promotion
+          and demotion system to help determine what processes get to run and
+          when.
         </p>
-      </p>
+      </div>
 
       <!-- CONTACT SECTION -->
-      <h3 id="Contact">Contact</h3>
+      <h2 id="Contact" class="section-header">Contact</h2>
       <p>placeholder text for contacting me</p>
     </main>
   </body>

@@ -3,6 +3,7 @@
   --gray: #363636;
   --white: #ffffff;
   --purple: #740ac4;
+  --light-purple: #a143e8;
 }
 
 .container {
@@ -20,4 +21,18 @@
   color: var(--white);
   padding: 2em;
   font-size: 1.2em;
+}
+
+.section {
+  background-color: var(--dark-gray);
+  border-radius: 2%;
+  padding: 1.5em;
+  color: var(--white);
+}
+
+.section-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1.2em;
 }
