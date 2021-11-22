@@ -37,6 +37,11 @@
   color: var(--purple);
 }
 
+/* Class for managing the header at the top of the page */
+.page-header {
+  text-align: center;
+}
+
 /* Classes for most of the content */
 .content-container {
   background-color: var(--gray);
@@ -68,4 +73,30 @@
   border-color: var(--light-purple);
   border-radius: 0.4em;
   width: 100%;
+}
+
+/* Classes for the form submit buttons */
+.submit {
+  width: 49%;
+  background-color: var(--pink);
+  border-color: var(--pink);
+  margin: 0 2px 0 2px;
+}
+
+.submit:hover {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+
+.reset {
+  width: 49%;
+  color: var(--pink);
+  border-color: var(--pink);
+  margin: 0 2px 0 2px;
+}
+
+.reset:hover {
+  background-color: var(--pink);
+  color: var(--white);
+  border-color: var(--pink);
 }
