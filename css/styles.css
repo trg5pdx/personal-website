@@ -4,18 +4,40 @@
   --white: #ffffff;
   --purple: #740ac4;
   --light-purple: #a143e8;
+  --pink: #d86ceb;
 }
 
 .container {
   background-color: var(--dark-gray);
 }
 
+/* Settings for nav bar */
 .nav-colors {
   background-color: black;
-  color: var(--purple);
-  text-decoration: none;
+}
+/* Made these changes to navbar & nav-item 
+  for changing hover background color and making it extend 
+  all the way down the whole bar */
+.navbar {
+  padding: 0;
 }
 
+.nav-item {
+  padding: 0.5em 0;
+}
+
+.nav-link {
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.nav-link:hover {
+  color: var(--purple);
+}
+
+/* Classes for most of the content */
 .content-container {
   background-color: var(--gray);
   color: var(--white);
@@ -25,8 +47,9 @@
 
 .section {
   background-color: var(--dark-gray);
-  border-radius: 2%;
+  border-radius: 0.4em;
   padding: 1.5em;
+  margin: 0;
   color: var(--white);
 }
 
@@ -35,4 +58,14 @@
   font-weight: bold;
   font-size: 1.2em;
   padding: 1.2em;
+}
+
+/* Used for the form text boxes */
+.id-box {
+  background-color: var(--gray);
+  color: var(--pink);
+  font-size: 1.2em;
+  border-color: var(--light-purple);
+  border-radius: 0.4em;
+  width: 100%;
 }
