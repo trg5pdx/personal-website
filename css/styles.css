@@ -3,6 +3,7 @@
   --gray: #363636;
   --white: #ffffff;
   --purple: #740ac4;
+  --dark-purple: #150521;
   --light-purple: #a143e8;
   --pink: #d86ceb;
 }
@@ -69,6 +70,20 @@
   padding: 1.2em;
 }
 
+.project-header {
+  background-color: var(--dark-purple);
+  border-radius: 0.5em;
+  font-size: 1em;
+  margin: 0.5em auto 0;
+}
+
+.project {
+  background-color: var(--dark-purple);
+  border-radius: 0.6em;
+  padding: 1.5em;
+  margin: 1em 0 0;
+}
+
 /* Class used to prevent bootstrap-grid from stretching images */
 .image-box {
   display: flex;
@@ -87,13 +102,16 @@
 }
 
 /* Classes for the form submit buttons */
-.submit {
+.form-button {
   width: 49%;
+  margin: 0 2px 0 2px;
+  font-weight: bold;
+}
+
+.submit {
   background-color: var(--pink);
   border-color: var(--pink);
   color: var(--dark-gray);
-  margin: 0 2px 0 2px;
-  font-weight: bold;
 }
 
 .submit:hover {
@@ -102,15 +120,12 @@
 }
 
 .reset {
-  width: 49%;
   color: var(--pink);
   border-color: var(--pink);
-  margin: 0 2px 0 2px;
-  font-weight: bold;
 }
 
 .reset:hover {
   background-color: var(--pink);
-  color: var(--white);
+  color: var(--dark-gray);
   border-color: var(--pink);
 }
