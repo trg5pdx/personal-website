@@ -71,17 +71,25 @@
 }
 
 .project-header {
+  width: 100%;
+  color: var(--white);
   background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
   border-radius: 0.5em;
   font-size: 1em;
   margin: 0.5em auto 0;
+  padding: auto auto 0;
+}
+
+.project-header-open {
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .project {
   background-color: var(--dark-purple);
-  border-radius: 0.6em;
+  border-radius: 0 0 0.6em 0.6em;
   padding: 1.5em;
-  margin: 1em 0 0;
+  margin: 0;
 }
 
 /* Class used to prevent bootstrap-grid from stretching images */

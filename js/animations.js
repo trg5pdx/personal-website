@@ -1,26 +1,21 @@
+let project_toggle = (parent, child) => {
+  let selectors = parent + ' + ' + child;
+  $(selectors).slideToggle();
+  $(parent).add(child).toggleClass('project-header-open', 500);
+};
+
 $(document).ready(function () {
   $('.project').hide();
 
-  /*
-  let $title = $('h4');
-  $title.hide().each(function (index) {
-    $(this)
-      .delay(700 * index)
-      .fadeIn(700);
-  });
-  $title.on('click', function () {
-    $(this).fadeOut(700);
-  }); */
-
   $('.xv6').on('click', function () {
-    $('#project + .xv6').slideToggle();
+    project_toggle('#project', '.xv6');
   });
 
   $('.website').on('click', function () {
-    $('#project + .website').slideToggle();
+    project_toggle('#project', '.website');
   });
 
   $('.chocan').on('click', function () {
-    $('#project + .chocan').slideToggle();
+    project_toggle('#project', '.chocan');
   });
 });
