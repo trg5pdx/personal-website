@@ -59,9 +59,9 @@
         </div>
       </div>
     </nav>
-    <main class="w-75 mt-5 mx-auto content-container">
+    <main class="mt-5 mx-auto content-container">
       <h1 class="page-header section">
-        Welcome to Thomas Gardner's Personal Website!
+        Welcome to Thomas Gardner's Website!
       </h1>
       <!-- ABOUT SECTION -->
       <h2 id="About" class="section-header">About</h2>
@@ -134,7 +134,7 @@
       <div class="bootstrap-grid section">
         <div class="row1 row">
           <div class="col-md-6">
-            <h4>School</h4>
+            <h3 class="work-header">School</h4>
             <ul>
               <li>GPA: 3.35</li>
               <li>Major: Computer Science</li>
@@ -150,7 +150,7 @@
             </ul>
           </div>
           <div class="col-md-6">
-            <h4>Skills</h4>
+            <h3 class="work-header">Skills</h4>
             <ul>
               <li>Programming Languages</li>
               <ul>
@@ -158,7 +158,6 @@
                 <li>HTML/CSS/Javascript</li>
                 <li>PostgreSQL</li>
                 <li>Rust</li>
-                <li>Python</li>
               </ul>
               <li>Technical Writing</li>
               <li>Documentation</li>
@@ -168,14 +167,14 @@
           </div>
           <div class="row2 row">
             <div class="col-md-6">
-              <h4>Work History</h4>
+              <h3 class="work-header">Work History</h4>
               <ul>
                 <li>2017-2019: Tutor @ Upward Bound ETS</li>
                 <li>2019-: Office Assistant @ Upward Bound ETS</li>
               </ul>
             </div>
             <div class="col-md-6">
-              <h4>Volunteering History</h4>
+              <h3 class="work-header">Volunteering History</h4>
               <ul>
                 <li>Free Geek</li>
                 <li>Oregon Food Bank</li>
@@ -192,9 +191,6 @@
         </button>
         <div class="project xv6">
           <p>
-            Link to Repo:
-            <a href="https://github.com/trg5pdx/xv6" class="link">Xv6</a>
-            <br />
             One project I worked on was for the operating system called Xv6.
             It’s a OS thats mainly focused on teaching students about the in’s
             and out’s of of OS development, and how they function internally
@@ -214,6 +210,11 @@
             does this is by adding priority levels and a process promotion and
             demotion system to help determine what processes get to run and
             when.
+            <br />
+            <br />
+            Link to Repo:
+            <a href="https://github.com/trg5pdx/xv6" class="link">Xv6</a>
+            <br />
           </p>
         </div>
         <button class="section-header project-header website" id="project">
@@ -221,11 +222,6 @@
         </button>
         <div class="project website">
           <p>
-            Link to Repo:
-            <a href="https//github.com/trg5pdx/personal-website" class="link">
-              Personal Website
-            </a>
-            <br />
             This website was a project for my web development class. It was
             meant to have us showcase what we learned during the course, which
             includes HTML, CSS, Bootstrap, Javascript, and jQuery. We had to
@@ -237,6 +233,13 @@
             had to keep a journal about the development process. For the contact
             section, we weren’t required to set up a system for sending the data
             entered by users, but we could if we wanted to.
+            <br />
+            <br />
+            Link to Repo:
+            <a href="https//github.com/trg5pdx/personal-website" class="link">
+              Personal Website
+            </a>
+            <br />
           </p>
         </div>
         <button class="section-header project-header chocan" id="project">
@@ -244,11 +247,6 @@
         </button>
         <div class="project chocan">
           <p>
-            Link to Repo:
-            <a href="https://github.com/cs300-wi20-group5/project" class="link">
-              ChocAnon
-            </a>
-            <br />
             Another project I worked on was a group project for creating a
             program for a chocolate addicts anonymous help group. The program
             allowed for patient information to be entered and saved into a data
@@ -264,6 +262,13 @@
             with planning the development of our program and learning how to
             organize who does what in our project. We did the project in C++
             since that's what most of us were familiar with.
+            <br />
+            <br />
+            Link to Repo:
+            <a href="https://github.com/cs300-wi20-group5/project" class="link">
+              ChocAnon
+            </a>
+            <br />
           </p>
         </div>
       </div>
@@ -314,22 +319,36 @@
               placeholder="Enter your message here"
             ></textarea>
           </div>
-          <div class="col-12">
-            <button
-              type="submit"
-              class="btn btn-primary btn-lg form-button submit"
-            >
-              Submit
-            </button>
-            <button
-              type="reset"
-              class="btn btn-outline-primary btn-lg form-button reset"
-            >
-              Reset
-            </button>
-          </div>
+          <button
+            type="submit"
+            class="
+              btn btn-primary btn-lg
+              form-button
+              submit
+              col-12 col-md-6
+              mt-2
+              mx-1
+            "
+          >
+            Submit
+          </button>
+          <button
+            type="reset"
+            class="
+              btn btn-outline-primary btn-lg
+              form-button
+              reset
+              col-12 col-md-6
+              mt-2
+              mx-1
+            "
+          >
+            Reset
+          </button>
         </form>
       </div>
     </main>
+    <br />
+    <footer class="footer">Made by Thomas Gardner, 2021</footer>
   </body>
 </html>

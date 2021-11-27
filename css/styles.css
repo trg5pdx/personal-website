@@ -50,9 +50,23 @@
 .page-header {
   text-align: center;
   font-weight: bold;
+  color: var(--pink);
 }
 
 /* Classes for most of the content */
+
+@media (max-width: 1023px) {
+  .content-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-container {
+    width: 75%;
+  }
+}
+
 .content-container {
   background-color: var(--gray);
   border-width: 0.2em;
@@ -66,10 +80,12 @@
 
 .section {
   background-color: var(--dark-gray);
-  border-radius: 0.6em;
   padding: 1.5em;
   margin: 0;
-  color: var(--white);
+  border-radius: 0.6em;
+  border-width: thin;
+  border-style: inset;
+  border-color: var(--purple);
 }
 
 .section-header {
@@ -77,14 +93,22 @@
   font-weight: bold;
   font-size: 1.4em;
   padding: 1.2em;
+  color: var(--pink);
+}
+
+.work-header {
+  color: var(--pink);
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .project-header {
   width: 100%;
   color: var(--white);
   background-color: var(--dark-purple);
-  border-color: var(--dark-purple);
+  border-color: var(--pink);
   border-radius: 0.5em;
+  border-style: inset;
   font-size: 1em;
   margin: 0.5em auto 0;
   padding: auto auto 0;
@@ -97,6 +121,9 @@
 .project {
   background-color: var(--dark-purple);
   border-radius: 0 0 0.6em 0.6em;
+  border-style: inset;
+  border-width: 0.1em;
+  border-color: var(--pink);
   padding: 1.5em;
   margin: 0;
 }
@@ -128,8 +155,7 @@
 
 /* Classes for the form submit buttons */
 .form-button {
-  width: 49%;
-  margin: 0 2px 0 2px;
+  width: 48%;
   font-weight: bold;
 }
 
@@ -154,4 +180,9 @@
   background-color: var(--purple);
   border-color: var(--purple);
   color: var(--white);
+}
+
+.footer {
+  color: var(--white);
+  text-align: center;
 }
