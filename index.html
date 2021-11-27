@@ -49,7 +49,7 @@
               width="200"
               height="200"
               alt="A picture of a cat"
-              class="src"
+              class="src about-images"
             />
           </div>
           <p class="col-12 col-lg-8">
@@ -78,7 +78,7 @@
               width="200"
               height="200"
               alt="A picture of a cat"
-              class="src"
+              class="src about-images"
             />
           </div>
         </div>
@@ -90,7 +90,7 @@
               width="200"
               height="200"
               alt="A picture of a cat"
-              class="src"
+              class="src about-images"
             />
           </div>
           <p class="col-12 col-lg-8">
@@ -258,6 +258,11 @@
         </p>
         <form action="" class="row g-3">
           <div class="col-lg-6 col-12">
+            <!-- 
+              Got bootstrap hide class from: https://stackoverflow.com/questions/57039195/how-to-hide-element-for-mobile-device-with-bootstrap4
+              Used to hide labels for normal users but still have it in the html for screen readers
+            -->
+            <label for="name" class="label-box d-none"> Name: </label>
             <input
               type="text"
               name="name"
@@ -267,6 +272,7 @@
             />
           </div>
           <div class="col-lg-6 col-12">
+            <label for="email" class="label-box d-none"> Email: </label>
             <input
               type="text"
               name="email"
@@ -276,8 +282,10 @@
             />
           </div>
           <div class="col-12">
+            <label for="message" class="label-box d-none"> Message: </label>
             <textarea
               name="message"
+              id="message"
               class="id-box"
               placeholder="Enter your message here"
             ></textarea>

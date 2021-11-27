@@ -45,11 +45,16 @@
 /* Class for managing the header at the top of the page */
 .page-header {
   text-align: center;
+  font-weight: bold;
 }
 
 /* Classes for most of the content */
 .content-container {
   background-color: var(--gray);
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: var(--dark-purple);
+  border-radius: 0 0 0.2em 0.2em;
   color: var(--white);
   padding: 2em;
   font-size: 1.2em;
@@ -99,6 +104,10 @@
   align-items: center;
 }
 
+.about-images {
+  border-radius: 0.5em;
+}
+
 /* Used for the form text boxes */
 .id-box {
   background-color: var(--gray);
@@ -106,6 +115,10 @@
   font-size: 1.2em;
   border-color: var(--light-purple);
   border-radius: 0.4em;
+  width: 100%;
+}
+
+.label-box {
   width: 100%;
 }
 
@@ -125,6 +138,7 @@
 .submit:hover {
   background-color: var(--purple);
   border-color: var(--purple);
+  color: var(--white);
 }
 
 .reset {
@@ -133,7 +147,7 @@
 }
 
 .reset:hover {
-  background-color: var(--pink);
-  color: var(--dark-gray);
-  border-color: var(--pink);
+  background-color: var(--purple);
+  border-color: var(--purple);
+  color: var(--white);
 }
