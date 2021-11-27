@@ -6,6 +6,7 @@
   --dark-purple: #150521;
   --light-purple: #a143e8;
   --pink: #d86ceb;
+  --black: #000000;
 }
 
 .link {
@@ -18,7 +19,10 @@
 
 /* Settings for nav bar */
 .nav-colors {
-  background-color: black;
+  background-color: var(--black);
+  border-color: var(--dark-purple);
+  border-width: 0.4em;
+  border-style: none none inset none;
 }
 /* Made these changes to navbar & nav-item 
   for changing hover background color and making it extend 
