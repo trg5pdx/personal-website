@@ -10,7 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -190,90 +193,96 @@
       <!-- PROJECTS SECTION -->
       <h2 id="Projects" class="section-header">Projects</h2>
       <div class="section">
-        <button class="section-header project-header xv6" id="project">
-          Xv6
-        </button>
-        <div class="project xv6">
-          <p>
-            One project I worked on was for the operating system called Xv6.
-            It’s a OS thats mainly focused on teaching students about the in’s
-            and out’s of of OS development, and how they function internally
-            without giving them an OS thats too complex. For Xv6, I worked on
-            creating new programs for the OS that could be run from it’s command
-            line, worked on how processes were handled, implemented a
-            round-robin scheduler, and implemented a multilevel feedback queue
-            algorithm (MLFQ) into the scheduler. For the round-robin scheduler
-            and MLFQ, the primary purpose of implementing those was to teach
-            about how OSes avoid programs being unable to run due to other
-            processes using up all of the resources, which was done by
-            implementing states that the processes would run through to ensure
-            that they would pause at some point and let others run, hence the
-            name round robin. And the MLFQ algorithm adds to that by making it
-            utilize multiple cores, and be able to prioritize what runs even
-            better than a basic round-robin scheduler would. One of the ways it
-            does this is by adding priority levels and a process promotion and
-            demotion system to help determine what processes get to run and
-            when.
-            <br />
-            <br />
-            Link to Repo:
-            <a href="https://github.com/trg5pdx/xv6" class="link">Xv6</a>
-            <br />
-          </p>
+        <div class="xv6">
+          <button class="section-header project-header">
+            Xv6
+          </button>
+          <div class="project">
+            <p>
+              One project I worked on was for the operating system called Xv6.
+              It’s a OS thats mainly focused on teaching students about the in’s
+              and out’s of of OS development, and how they function internally
+              without giving them an OS thats too complex. For Xv6, I worked on
+              creating new programs for the OS that could be run from it’s command
+              line, worked on how processes were handled, implemented a
+              round-robin scheduler, and implemented a multilevel feedback queue
+              algorithm (MLFQ) into the scheduler. For the round-robin scheduler
+              and MLFQ, the primary purpose of implementing those was to teach
+              about how OSes avoid programs being unable to run due to other
+              processes using up all of the resources, which was done by
+              implementing states that the processes would run through to ensure
+              that they would pause at some point and let others run, hence the
+              name round robin. And the MLFQ algorithm adds to that by making it
+              utilize multiple cores, and be able to prioritize what runs even
+              better than a basic round-robin scheduler would. One of the ways it
+              does this is by adding priority levels and a process promotion and
+              demotion system to help determine what processes get to run and
+              when.
+              <br />
+              <br />
+              Link to Repo:
+              <a href="https://github.com/trg5pdx/xv6" class="link">Xv6</a>
+              <br />
+            </p>
+          </div>
         </div>
-        <button class="section-header project-header website" id="project">
-          Personal Website
-        </button>
-        <div class="project website">
-          <p>
-            This website was a project for my web development class. It was
-            meant to have us showcase what we learned during the course, which
-            includes HTML, CSS, Bootstrap, Javascript, and jQuery. We had to
-            have a navbar, and have a section dedicated to talking about
-            ourselves, a previous work section which would include work
-            experience and possibly a resume, a section for projects we wanted
-            to showcase, and a contact section. We also had to deploy the
-            website using some hosting service like what github offers, and we
-            had to keep a journal about the development process. For the contact
-            section, we weren’t required to set up a system for sending the data
-            entered by users, but we could if we wanted to.
-            <br />
-            <br />
-            Link to Repo:
-            <a href="https//github.com/trg5pdx/personal-website" class="link">
-              Personal Website
-            </a>
-            <br />
-          </p>
+        <div class="website">
+          <button class="section-header project-header">
+            Personal Website
+          </button>
+          <div class="project">
+            <p>
+              This website was a project for my web development class. It was
+              meant to have us showcase what we learned during the course, which
+              includes HTML, CSS, Bootstrap, Javascript, and jQuery. We had to
+              have a navbar, and have a section dedicated to talking about
+              ourselves, a previous work section which would include work
+              experience and possibly a resume, a section for projects we wanted
+              to showcase, and a contact section. We also had to deploy the
+              website using some hosting service like what github offers, and we
+              had to keep a journal about the development process. For the contact
+              section, we weren’t required to set up a system for sending the data
+              entered by users, but we could if we wanted to.
+              <br />
+              <br />
+              Link to Repo:
+              <a href="https//github.com/trg5pdx/personal-website" class="link">
+                Personal Website
+              </a>
+              <br />
+            </p>
+          </div>
         </div>
-        <button class="section-header project-header chocan" id="project">
-          Chocoholics Anonymous
-        </button>
-        <div class="project chocan">
-          <p>
-            Another project I worked on was a group project for creating a
-            program for a chocolate addicts anonymous help group. The program
-            allowed for patient information to be entered and saved into a data
-            structure on the backend, and then upon the program closing, would
-            then write the data to a file. The program would also load the data
-            back from the text file and set up the data structures to allow the
-            user to edit the information already present. This project was done
-            for a class teaching us about software engineering and to teach us
-            how to work on software in a group setting. The main reason why we
-            worked on this project was to familiarize ourselves with git and to
-            get experience with working on a group programming project since we
-            didn't have much prior experience with that, and to get experience
-            with planning the development of our program and learning how to
-            organize who does what in our project. We did the project in C++
-            since that's what most of us were familiar with.
-            <br />
-            <br />
-            Link to Repo:
-            <a href="https://github.com/cs300-wi20-group5/project" class="link">
-              ChocAnon
-            </a>
-            <br />
-          </p>
+        <div class="chocan">
+          <button class="section-header project-header">
+            Chocoholics Anonymous
+          </button>
+          <div class="project">
+            <p>
+              Another project I worked on was a group project for creating a
+              program for a chocolate addicts anonymous help group. The program
+              allowed for patient information to be entered and saved into a data
+              structure on the backend, and then upon the program closing, would
+              then write the data to a file. The program would also load the data
+              back from the text file and set up the data structures to allow the
+              user to edit the information already present. This project was done
+              for a class teaching us about software engineering and to teach us
+              how to work on software in a group setting. The main reason why we
+              worked on this project was to familiarize ourselves with git and to
+              get experience with working on a group programming project since we
+              didn't have much prior experience with that, and to get experience
+              with planning the development of our program and learning how to
+              organize who does what in our project. We did the project in C++
+              since that's what most of us were familiar with.
+              <br />
+              <br />
+              Link to Repo:
+              <a href="https://github.com/cs300-wi20-group5/project" class="link">
+                ChocAnon
+              </a>
+              <br />
+            </p>
+          </div>
         </div>
       </div>
 
