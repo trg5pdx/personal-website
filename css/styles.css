@@ -32,14 +32,14 @@
 }
 
 .nav-item {
-  padding: 0.5em 0;
+  padding: 0.5em 1.3em;
 }
 
 .nav-link {
   color: var(--pink);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 
 .nav-link:hover {
@@ -72,10 +72,10 @@
   border-width: 0.2em;
   border-style: solid;
   border-color: var(--dark-purple);
-  border-radius: 0 0 0.2em 0.2em;
+  border-radius: 0 0 0.6em 0.6em;
   color: var(--white);
   padding: 2em;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .section {
@@ -91,7 +91,7 @@
 .section-header {
   text-align: center;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.5em;
   padding: 1.2em;
   color: var(--pink);
 }
@@ -143,7 +143,7 @@
 .id-box {
   background-color: var(--gray);
   color: var(--pink);
-  font-size: 1.2em;
+  font-size: 1.3em;
   border-color: var(--light-purple);
   border-radius: 0.4em;
   width: 100%;
@@ -153,7 +153,7 @@
   width: 100%;
 }
 
-/* Classes for the form submit buttons */
+/* Classes for the form primary buttons */
 .form-button {
   width: 48%;
   font-weight: bold;
@@ -163,6 +163,7 @@
   background-color: var(--pink);
   border-color: var(--pink);
   color: var(--dark-gray);
+  font-size: 1.1em;
 }
 
 .submit:hover {
@@ -174,6 +175,7 @@
 .reset {
   color: var(--pink);
   border-color: var(--pink);
+  font-size: 1.1em;
 }
 
 .reset:hover {

@@ -41,7 +41,7 @@
           aria-expanded="false"
           aria-label="Toggle Navigation"
         >
-          <div class="nav-link">Menu</div>
+          <i class="fas fa-bars nav-link fa-9x"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mx-auto">
@@ -293,11 +293,17 @@
         <p>
           You can contact me at:
           <br />
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/tom-gardner-369376227" class="link">My Profile</a>
-          <br />
-          Github:
-          <a href="https://github.com/trg5pdx" class="link">trg5pdx</a>
+          <!-- Got idea for using anchor as button from here:
+            https://stackoverflow.com/questions/34082002/html-button-opening-link-in-new-tab
+          -->
+          <a class="btn submit" href="https://github.com/trg5pdx/">
+            <i class="fab fa-2x fa-github"></i>
+            <span>Github</span>
+          </a>
+          <a class="btn submit" href="https://www.linkedin.com/in/tom-gardner-369376227">
+            <i class="fab fa-2x fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
         </p>
         <form action="" class="row g-3">
           <div class="col-lg-6 col-12">
@@ -344,7 +350,7 @@
               mx-1
             "
           >
-            Submit
+            submit
           </button>
           <button
             type="reset"
