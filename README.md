@@ -15,7 +15,8 @@ The live version of this website can be viewed [`here`](https://trg5pdx.github.i
 
 First, you need to clone the repository to your local machine, which you can do by running
 the following command in your terminal:
-$ git clone https://github.com/trg5pdx/personal-website
+
+    $ git clone https://github.com/trg5pdx/personal-website
 
 After that you have a few options for viewing the website. You can open the file labelled
 `index.html` in your web browser to run the code, or if you're using an editor like VS Code,
