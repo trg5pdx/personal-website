@@ -7,11 +7,15 @@ experience, what I worked on in school, and the skills that I have, a projects s
 I highlighted some of the projects I've worked on while at PSU, and a contact me section which
 includes links to my Github and LinkedIn.
 
+## Live Version of the Website
+
+The live version of this website can be viewed [`here`](https://trg5pdx.github.io/personal-website)
+
 ## Running the website
 
 First, you need to clone the repository to your local machine, which you can do by running
 the following command in your terminal:
-`git clone https://github.com/trg5pdx/personal-website`
+$ git clone https://github.com/trg5pdx/personal-website
 
 After that you have a few options for viewing the website. You can open the file labelled
 `index.html` in your web browser to run the code, or if you're using an editor like VS Code,
