@@ -6,10 +6,14 @@
   --dark-purple: #150521;
   --light-purple: #a143e8;
   --pink: #d86ceb;
+  --light-pink: #e0a2eb;
   --black: #000000;
 }
 
-@media (max-width: 767px) {
+/* Used this site for referencing the breakpoints bootstrap uses:
+  https://www.markuptag.com/bootstrap-5-breakpoints-media-query-sizes/
+*/
+@media (max-width: 991px) {
   .page-header {
     font-size: 1.5em;
     padding: 1em;
@@ -29,9 +33,23 @@
     width: 100%;
     font-size: 1em;
   }
+
+  .image-box {
+    justify-content: center;
+  }
+
+  .about-images {
+    width: 90%;
+    height: 90%;
+  }
+
+  .form-button {
+    width: 100%;
+    margin: 0.3em 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .page-header {
     font-size: 1.4em;
   }
@@ -49,10 +67,24 @@
     font-size: 1em;
     padding: 1.5em;
   }
+
+  .image-box {
+    justify-content: left;
+  }
+
+  .about-images {
+    width: 90%;
+    height: 90%;
+  }
+
+  .form-button {
+    width: 49%;
+  }
 }
 
 .link {
   color: var(--pink);
+  font-size: 1.3em;
 }
 
 .container {
@@ -130,6 +162,24 @@
   color: var(--pink);
 }
 
+/* Class used to prevent bootstrap-grid from stretching images */
+.image-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 
+Used the following link to scale images without stretching them:
+https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio
+*/
+.about-images {
+  border-radius: 0.9em;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
 .work-header {
   color: var(--pink);
   font-size: 1.2em;
@@ -162,26 +212,15 @@
   margin: 0;
 }
 
-/* Class used to prevent bootstrap-grid from stretching images */
-.image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-images {
-  border-radius: 0.5em;
-  object-fit: scale-down;
-}
-
 /* Used for the form text boxes */
 .id-box {
   background-color: var(--gray);
-  color: var(--pink);
+  color: var(--light-pink);
   font-size: 1.2em;
   border-color: var(--light-purple);
   border-radius: 0.4em;
   width: 100%;
+  margin: 0.3em auto;
 }
 
 .label-box {
@@ -190,15 +229,14 @@
 
 /* Classes for the form buttons */
 .form-button {
-  width: 48%;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .submit {
   background-color: var(--pink);
   border-color: var(--pink);
   color: var(--dark-gray);
-  font-size: 1.1em;
 }
 
 .submit:hover {
@@ -210,18 +248,12 @@
 .reset {
   color: var(--pink);
   border-color: var(--pink);
-  font-size: 1.1em;
 }
 
 .reset:hover {
   background-color: var(--purple);
   border-color: var(--purple);
   color: var(--white);
-}
-
-/* Used for the Github & LinkedIn buttons */
-.btn {
-  margin: 0.3em;
 }
 
 .footer {
