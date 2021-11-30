@@ -13,7 +13,30 @@
 /* Used this site for referencing the breakpoints bootstrap uses:
   https://www.markuptag.com/bootstrap-5-breakpoints-media-query-sizes/
 */
-@media (max-width: 991px) {
+
+@media (max-width: 575px) {
+  .section {
+    padding: 0.5em;
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .about-images {
+    width: auto;
+    height: auto;
+  }
+
+  .project {
+    padding: 0.5em;
+  }
+
+  .form-button {
+    width: 100%;
+    margin: 0.3em 0;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
   .page-header {
     font-size: 1.5em;
     padding: 1em;
@@ -39,8 +62,13 @@
   }
 
   .about-images {
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
+    justify-content: center;
+  }
+
+  .project {
+    padding: 1em;
   }
 
   .form-button {
@@ -73,8 +101,12 @@
   }
 
   .about-images {
-    width: 90%;
-    height: 90%;
+    width: auto;
+    height: auto;
+  }
+
+  .project {
+    padding: 1.5em;
   }
 
   .form-button {
@@ -84,7 +116,7 @@
 
 .link {
   color: var(--pink);
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .container {
@@ -162,12 +194,6 @@
   color: var(--pink);
 }
 
-/* Class used to prevent bootstrap-grid from stretching images */
-.image-box {
-  display: flex;
-  align-items: flex-start;
-}
-
 /* 
 Used the following link to scale images without stretching them:
 https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio
@@ -176,8 +202,6 @@ https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-asp
   border-radius: 0.9em;
   max-height: 100%;
   max-width: 100%;
-  width: auto;
-  height: auto;
 }
 
 .work-header {
@@ -208,7 +232,6 @@ https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-asp
   border-style: inset;
   border-width: 0.1em;
   border-color: var(--pink);
-  padding: 1.5em;
   margin: 0;
 }
 
