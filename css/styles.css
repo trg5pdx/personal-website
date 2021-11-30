@@ -39,7 +39,7 @@
   color: var(--pink);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .nav-link:hover {
@@ -58,12 +58,41 @@
 @media (max-width: 1023px) {
   .content-container {
     width: 100%;
+    padding: 0.3em;
+  }
+
+  .page-header {
+    font-size: 1.1em;
+  }
+
+  .section {
+    padding: 0.9em;
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .section-header {
+    font-size: 1em;
   }
 }
 
 @media (min-width: 1024px) {
   .content-container {
     width: 75%;
+    padding: 2em;
+  }
+
+  .section-header {
+    font-size: 1.3em;
+  }
+
+  .section {
+    font-size: 1em;
+    padding: 1.5em;
+  }
+
+  .page-header {
+    font-size: 1.4em;
   }
 }
 
@@ -74,13 +103,11 @@
   border-color: var(--dark-purple);
   border-radius: 0 0 0.6em 0.6em;
   color: var(--white);
-  padding: 2em;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .section {
   background-color: var(--dark-gray);
-  padding: 1.5em;
   margin: 0;
   border-radius: 0.6em;
   border-width: thin;
@@ -91,7 +118,6 @@
 .section-header {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
   padding: 1.2em;
   color: var(--pink);
 }
@@ -143,7 +169,7 @@
 .id-box {
   background-color: var(--gray);
   color: var(--pink);
-  font-size: 1.3em;
+  font-size: 1.2em;
   border-color: var(--light-purple);
   border-radius: 0.4em;
   width: 100%;
@@ -182,6 +208,11 @@
   background-color: var(--purple);
   border-color: var(--purple);
   color: var(--white);
+}
+
+/* Used for the Github & LinkedIn buttons */
+.btn {
+  margin: 0.3em;
 }
 
 .footer {
