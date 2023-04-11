@@ -8,8 +8,20 @@ let project_toggle = (parent, child1, child2) => {
 $(document).ready(function () {
   $('.project').hide();
 
+  $('.blurp').on('click', function () {
+    project_toggle('.blurp', '.project', '.project-header');
+  });
+
+  $('.irc').on('click', function () {
+    project_toggle('.irc', '.project', '.project-header');
+  });
+
   $('.xv6').on('click', function () {
     project_toggle('.xv6', '.project', '.project-header');
+  });
+
+  $('.webserver').on('click', function () {
+    project_toggle('.webserver', '.project', '.project-header');
   });
 
   $('.website').on('click', function () {

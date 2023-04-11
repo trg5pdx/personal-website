@@ -156,6 +156,7 @@
 .page-header {
   text-align: center;
   font-weight: bold;
+  font-size: 1.6em;
   color: var(--pink);
   background-color: var(--dark-gray);
   margin: 0;
@@ -224,6 +225,10 @@ https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-asp
 
 .project-header-open {
   border-radius: 0.5em 0.5em 0 0;
+}
+
+.about {
+  font-size: 1.5rem;
 }
 
 .project {

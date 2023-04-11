@@ -43,7 +43,7 @@
         >
           <i class="fas fa-bars nav-link fa-9x"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="navbar-collapse collapse" id="navbarToggler">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
             <li class="nav-item">
@@ -62,22 +62,14 @@
         </div>
       </div>
     </nav>
-    <main class="mt-5 mx-auto content-container">
-      <h1 class="page-header">
-        Welcome to Thomas Gardner's Website!
-      </h1>
+    <main class="content-container mx-auto mt-5">
+      <h1 class="page-header">Welcome to Thomas Gardner's Website!</h1>
       <!-- ABOUT SECTION -->
       <h2 id="About" class="section-header">About</h2>
-      <div class="bootstrap-grid section">
-        <div class="row1 row d-flex">
-          <div 
-            class="col-12 
-              col-md-4 
-              justify-content-center 
-              justify-content-md-left 
-              align-self-center 
-              align-self-md-start
-              d-flex"
+      <div class="bootstrap-grid section about">
+        <div class="row1 row align-items-center d-flex">
+          <div
+            class="col-12 col-md-4 justify-content-center justify-content-md-left align-self-center align-self-md-start d-flex"
           >
             <img
               src="images/profile.jpg"
@@ -88,37 +80,21 @@
             />
           </div>
           <p class="col-12 col-md-8">
-            Hi, my name is Thomas and I'm and undergrad Computer Science student
-            at Portland State University. I'm currently in my 6th year at PSU,
-            and I'm close to finishing my degree. I have two terms left, 
-            and I'm still not sure what I want to do in the working world, so I've
-            been taking different classes like web development to help me figure 
-            out what I want to do with my degree. I finished most of my required 
-            courses for CS, including a class on operating systems, databases, 
-            and algorithms. Along with having an interest in CS topics like 
-            programming and algorithms, I'm also interested in working on old 
-            computers and electronics, playing video games, and studying history.
+            Hi, my name is Thomas and I'm a Software Developer from Portland,
+            Oregon. I graduated from Portland State University in March 2023
+            with a BS in Computer Science. I like to work on computers, play
+            video games, and study history.
           </p>
         </div>
         <br />
-        <div class="row2 row d-flex">
+        <div class="row2 row d-flex align-items-center">
           <p class="col-12 col-md-7">
-            I enjoy building computers, working on and cleaning up old computers.
-            I find it very satisfying to clean up an old machine and to get them 
-            working again to run older software and games. I also go to thrift
-            stores semi regularly to look for old electronics, games, and books
-            to get more stuff to work on that relates to my hobbies. I'm also 
-            into mechanical keyboards, and because of that I've been learning 
-            how to solder. I like to play a variety of games, which include 
-            strategy games like Civilization VI, and RPG's like Fallout: New Vegas.
+            I like to work on computers and electronics, which includes building
+            computers and working on mechanical keyboards. I also like to play a
+            variety of video games in my free time.
           </p>
-          <div class="col-12 
-              col-md-5 
-              justify-content-center
-              justify-content-md-right 
-              align-self-center
-              align-self-md-start
-              d-flex"
+          <div
+            class="col-12 col-md-5 justify-content-center justify-content-md-right align-self-center align-self-md-start d-flex"
           >
             <img
               src="images/computers_consoles.jpg"
@@ -130,14 +106,9 @@
           </div>
         </div>
         <br />
-        <div class="row3 row">
-          <div class="col-12 
-              col-md-4
-              justify-content-center 
-              justify-content-md-left 
-              align-self-center 
-              align-self-md-top
-              d-flex" 
+        <div class="row3 row align-items-center">
+          <div
+            class="col-12 col-md-4 justify-content-center justify-content-md-left align-self-center align-self-md-top d-flex"
           >
             <img
               src="images/bookshelf.jpg"
@@ -148,13 +119,12 @@
             />
           </div>
           <p class="col-12 col-md-8">
-            So far, I've taken 6 history classes while at PSU, covering topics
-            like Medieval European History, the history of the American Indians
-            in the Southeastern United States, and about the Renaissance and the
-            Protestant Reformation. It's one of my favorite things to study, and
-            I enjoy studying all kinds of topics in history, like learning about
-            pre-colonization societies and how they were structured, and learning 
-            about how people lived at different points in history.
+            I've been into histroy since I was in high school, and in college I
+            decided to take a bunch of History classes on whatever topics
+            interested me. I've taken classes that covered African history,
+            Medieval European history, and history of American Indians in the
+            Southeastern US. It's one of my favorite subjects and I love to
+            learn about history from all over the world.
           </p>
         </div>
       </div>
@@ -164,14 +134,17 @@
       <div class="bootstrap-grid section">
         <div class="row1 row">
           <div class="col-md-6">
-            <h3 class="work-header">School</h4>
+            <h3 class="work-header">School</h3>
             <!-- Fixed list accessibility error thanks to:
             https://stackoverflow.com/questions/5899337/proper-way-to-make-html-nested-list-->
             <ul>
-              <li>GPA: 3.43</li>
-              <li>Major: Computer Science</li>
-              <li>Important Classes
+              <li>Degree: BS Computer Science</li>
+              <li>
+                Important Classes
                 <ul>
+                  <li>Internetworking Protocols</li>
+                  <li>Functional Programming</li>
+                  <li>Unit Testing/Branching Strategies</li>
                   <li>Operating Systems</li>
                   <li>Algorithms</li>
                   <li>Databases</li>
@@ -180,38 +153,65 @@
                   <li>Software Engineering</li>
                 </ul>
               </li>
+              <li>
+                Capstone: Blurp webapp
+                <ul>
+                  <li>Project Duration: Sep 2022 - Mar 2023</li>
+                  <li>
+                    Worked as a Frontend developer on a team of 10 other people
+                    and 2 team leads
+                  </li>
+                  <li>
+                    Used React.js and the SigmaJS and Graphology libraries
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="col-md-6">
-            <h3 class="work-header">Skills</h4>
+            <h3 class="work-header">Skills</h3>
             <ul>
-              <li>Programming Languages
+              <li>
+                Programming Languages and frameworks
                 <ul>
                   <li>C/C++</li>
-                  <li>HTML/CSS/Javascript</li>
+                  <li>HTML/CSS</li>
+                  <li>Javascript/Typescript</li>
+                  <li>React</li>
+                  <li>TailwindCSS</li>
                   <li>PostgreSQL</li>
                   <li>Rust</li>
+                  <li>Haskell</li>
                 </ul>
               </li>
-              <li>Technical Writing</li>
-              <li>Documentation</li>
-              <li>Familiar with Microsoft Office</li>
-              <li>Experience with Windows and Linux</li>
+              <li>Technical Writing/Documentation</li>
+              <li>Familiar with networking concepts</li>
+              <li>
+                Software
+                <ul>
+                  <li>OSes: Linux, Windows</li>
+                  <li>Coding tools: Vim, VSCode, Gdb, Git</li>
+                  <li>Office/Design: Microsoft Office, Figma</li>
+                  <li>Network tools: Wireshark</li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="row2 row">
             <div class="col-md-6">
-              <h3 class="work-header">Work History</h4>
+              <h3 class="work-header">Work History</h3>
               <ul>
-                <li>2017-2019: Tutor @ Upward Bound ETS</li>
-                <li>2019-2022: Office Assistant @ Upward Bound ETS</li>
+                <li>Sep 2017 - Jun 2019: Tutor @ Upward Bound ETS</li>
+                <li>
+                  Sep 2019 - March 2023: Office Assistant @ Upward Bound ETS
+                </li>
               </ul>
             </div>
             <div class="col-md-6">
-              <h3 class="work-header">Volunteering History</h4>
+              <h3 class="work-header">Volunteering</h3>
               <ul>
-                <li>Free Geek</li>
-                <li>Oregon Food Bank</li>
+                <li>Jan 2019 - Feb 2019: Oregon Food Bank</li>
+                <li>Before 2017: Free Geek</li>
               </ul>
             </div>
           </div>
@@ -220,18 +220,111 @@
       <!-- PROJECTS SECTION -->
       <h2 id="Projects" class="section-header">Projects</h2>
       <div class="section">
-        <div class="xv6">
+        <div class="blurp">
+          <button class="section-header project-header">Blurp</button>
+          <div class="project">
+            <p>
+              Blurp was a capstone project I worked on with 2 team leads, and a
+              team of 10 people. It was a project for building an app that
+              allows for users to map out their relationships to people, places,
+              and ideas. This was meant as a tool for therapists to send to
+              their patients before a session to help understand patients
+              better. For this project, we went for a simplistic design, as the
+              tools that already existed for this were specialized and
+              inaccessible to most users, both being in terms of cost, and in
+              terms of usability. I worked on the frontend portion of this app,
+              which we used React, SigmaJS, and Graphology to make the app work.
+              I worked on sending and retrieving data from the database, worked
+              on different GUI components like the modal that appears upon
+              loading in, and worked on getting the data associated with a node
+              or relationship to be loaded into a form in the app that the user
+              could edit and then save back to the node. Overall, the project
+              was very interesting to work with, as it had me think about how
+              users were going to be interacting with our software, and it had
+              me learn a lot of new skills while working on it.
+              <br />
+              <br />
+              Project Link:
+              <a href="https://github.com/pdx-blurp" class="link">
+                <i class="fab fa-1.5x fa-github"></i>
+                Blurp
+              </a>
+              <br />
+              Frontend Repo Link:
+              <a
+                href="https://github.com/pdx-blurp/blurp-frontend"
+                class="link"
+              >
+                <i class="fab fa-1.5x fa-github"></i>
+                Blurp-frontend
+              </a>
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="irc">
           <button class="section-header project-header">
-            Xv6
+            Chat Client/Server
           </button>
+          <div class="project">
+            <p>
+              This was a chat client/server written in python meant to work in a
+              similar way to an IRC chat client/server. However it isn’t
+              compatible with the IRC protocol, as I wrote my own protocol for
+              this client and server. This was written to get a chance to work
+              with networking, and to be able to write software that uses te TDP
+              protocol. The software I wrote for this allows for multiple users
+              to connect and create chatrooms, send messages to one or more
+              chatrooms, and be able to disconnect on their own. Users who
+              joined a room after could join and receive the message history as
+              they’re joining in. It was cool to work with networking, and to be
+              able to send a message on one computer and see the result on
+              another, and it was interesting working through the problems I ran
+              into while programming this.
+              <br />
+              <br />
+              For example, to get around the issue of only having one user
+              connect at a time, I set up the server to be multithreaded, with
+              one thread watching for new connections, and a new thread being
+              created each time a user connects. Each user thread was set up to
+              obtain the lock and add a message to the server when a new message
+              was received, which it would then release the lock and the other
+              threads would then see the change and send out the new message to
+              the clients. I think this could’ve been done in a better way as
+              its pretty inefficient to have two threads per client, but that
+              was the way I approached it with the limited time I had.
+              <br />
+              <br />
+              I also had issues with coming up how I would store the messages,
+              and how I would set up the chatrooms, which I ultimately solved it
+              by creating a map data structure for each chatroom, and wrote up a
+              class for the chatrooms to help keep track of the data and the
+              messages being stored. For actually parsing the packets, I went
+              through multiple stages with how I designed it, eventually setting
+              it up to use enums for each possible option of parsing, and to
+              keep track of state as the parsers is going through each line of
+              the received packet.
+              <br />
+              <br />
+              Repo:
+              <a href="https://github.com/trg5pdx/IRC_Project" class="link">
+                <i class="fab fa-1.5x fa-github"></i>
+                IRC_project
+              </a>
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="xv6">
+          <button class="section-header project-header">Xv6</button>
           <div class="project">
             <p>
               One project I worked on was for the operating system called Xv6.
               It’s a OS thats mainly focused on teaching students about the in’s
               and out’s of of OS development, and how they function internally
               without giving them an OS thats too complex. For Xv6, I worked on
-              creating new programs for the OS that could be run from it’s command
-              line, worked on how processes were handled, implemented a
+              creating new programs for the OS that could be run from it’s
+              command line, worked on how processes were handled, implemented a
               round-robin scheduler, and implemented a multilevel feedback queue
               algorithm (MLFQ) into the scheduler. For the round-robin scheduler
               and MLFQ, the primary purpose of implementing those was to teach
@@ -241,16 +334,46 @@
               that they would pause at some point and let others run, hence the
               name round robin. And the MLFQ algorithm adds to that by making it
               utilize multiple cores, and be able to prioritize what runs even
-              better than a basic round-robin scheduler would. One of the ways it
-              does this is by adding priority levels and a process promotion and
-              demotion system to help determine what processes get to run and
-              when.
+              better than a basic round-robin scheduler would. One of the ways
+              it does this is by adding priority levels and a process promotion
+              and demotion system to help determine what processes get to run
+              and when.
               <br />
               <br />
               Repo:
               <a href="https://github.com/trg5pdx/xv6" class="link">
                 <i class="fab fa-1.5x fa-github"></i>
                 Xv6
+              </a>
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="webserver">
+          <button class="section-header project-header">
+            Haskell Webserver
+          </button>
+          <div class="project">
+            <p>
+              This was a simple key/value webserver that I wrote for a final
+              project for my functional programming class. The server can only
+              handle plaintext and html formatted data, and it only implements
+              get and put http requests. It allows for users using software like
+              netcat put data on the server, and allows for users to use a web
+              browser to access that data and have it display properly in the
+              browser. While not technically impressive, it was more meant as an
+              exercise in abstracting different components of a webserver into
+              small functions, and for me to write an application using a
+              functional language.
+              <br />
+              <br />
+              Repo:
+              <a
+                href="https://github.com/trg5pdx/haskell-webserver"
+                class="link"
+              >
+                <i class="fab fa-1.5x fa-github"></i>
+                Haskell-webserver
               </a>
               <br />
             </p>
@@ -270,9 +393,9 @@
               experience and possibly a resume, a section for projects we wanted
               to showcase, and a contact section. We also had to deploy the
               website using some hosting service like what github offers, and we
-              had to keep a journal about the development process. For the contact
-              section, we weren’t required to set up a system for sending the data
-              entered by users, but we could if we wanted to.
+              had to keep a journal about the development process. For the
+              contact section, we weren’t required to set up a system for
+              sending the data entered by users, but we could if we wanted to.
               <br />
               <br />
               Repo:
@@ -292,23 +415,27 @@
             <p>
               Another project I worked on was a group project for creating a
               program for a chocolate addicts anonymous help group. The program
-              allowed for patient information to be entered and saved into a data
-              structure on the backend, and then upon the program closing, would
-              then write the data to a file. The program would also load the data
-              back from the text file and set up the data structures to allow the
-              user to edit the information already present. This project was done
-              for a class teaching us about software engineering and to teach us
-              how to work on software in a group setting. The main reason why we
-              worked on this project was to familiarize ourselves with git and to
-              get experience with working on a group programming project since we
-              didn't have much prior experience with that, and to get experience
-              with planning the development of our program and learning how to
-              organize who does what in our project. We did the project in C++
-              since that's what most of us were familiar with.
+              allowed for patient information to be entered and saved into a
+              data structure on the backend, and then upon the program closing,
+              would then write the data to a file. The program would also load
+              the data back from the text file and set up the data structures to
+              allow the user to edit the information already present. This
+              project was done for a class teaching us about software
+              engineering and to teach us how to work on software in a group
+              setting. The main reason why we worked on this project was to
+              familiarize ourselves with git and to get experience with working
+              on a group programming project since we didn't have much prior
+              experience with that, and to get experience with planning the
+              development of our program and learning how to organize who does
+              what in our project. We did the project in C++ since that's what
+              most of us were familiar with.
               <br />
               <br />
               Repo:
-              <a href="https://github.com/cs300-wi20-group5/project" class="link">
+              <a
+                href="https://github.com/cs300-wi20-group5/project"
+                class="link"
+              >
                 <i class="fab fa-1.5x fa-github"></i>
                 ChocAn
               </a>
@@ -332,7 +459,7 @@
             <i class="fab fa-2x fa-github"></i>
             <span>Github</span>
           </a>
-          <a class="btn submit" href="https://www.linkedin.com/in/tom-gardner-369376227">
+          <a class="btn submit" href="https://www.linkedin.com/in/trg5">
             <i class="fab fa-2x fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
@@ -374,20 +501,14 @@
           <div class="d-lg-flex justify-content-lg-between">
             <button
               type="submit"
-              class="
-                btn btn-primary
-                form-button
-                submit
-                col-12 col-md-6">
+              class="btn btn-primary form-button submit col-12 col-md-6"
+            >
               Submit
             </button>
             <button
               type="reset"
-              class="
-                btn btn-outline-primary
-                form-button
-                reset
-                col-12 col-md-6">
+              class="btn btn-outline-primary form-button reset col-12 col-md-6"
+            >
               Reset
             </button>
           </div>
@@ -395,6 +516,6 @@
       </div>
     </main>
     <br />
-    <footer class="footer">Made by Thomas Gardner, 2022</footer>
+    <footer class="footer">Made by Thomas Gardner, 2023</footer>
   </body>
 </html>
